@@ -1,0 +1,23 @@
+.about .container {
+    display: flex;
+    justify-content: center;
+    gap: 63px;
+}
+.about-image {
+    background: url('../../images/icons/ellipse.svg') right top / auto no-repeat;
+}
+.about .section-title {
+    max-width: 290px;
+    margin-bottom: 24px;
+    text-align: left;
+}
+.about .text-gray {
+    line-height: 28px;
+    margin-bottom: 48px;
+}
+
+@media screen and (max-width: 1023.98px) {
+    .about-image {
+        display: none;
+    }
+}

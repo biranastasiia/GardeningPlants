@@ -1,0 +1,559 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/images/favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicons/favicon-16x16.png">
+    <link rel="manifest" href="assets/images/favicons/site.webmanifest">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="assets/styles/style.css">
+    <title>Gardening Plants</title>
+</head>
+<body>
+    <svg style="display: none" width="0" height="0" xmlns="http://www.w3.org/2000/svg">
+        <defs>
+            <linearGradient id="half" x1="0" x2="100%" y1="0" y2="0">
+                <stop offset="50%" stop-color="#05A42C"></stop>
+                <stop offset="50%" stop-color="#E5E5E5"></stop>
+            </linearGradient>
+
+            <symbol viewBox="0 0 33 32" id="star">
+                <path d="M16.3729 0.748919C16.7094 -0.164256 18.0196 -0.107542 18.2759 0.831292L20.9273 10.5427C21.0418 10.9622 21.4143 11.2596 21.8487 11.2784L31.8019 11.7092C32.7661 11.751 33.1176 12.9993 32.3169 13.538L23.9811 19.146C23.6251 19.3855 23.4616 19.8253 23.5746 20.2391L26.2375 29.9931C26.493 30.929 25.4002 31.6439 24.645 31.0348L16.8805 24.7723C16.5392 24.497 16.0583 24.4762 15.6945 24.7209L7.41785 30.2892C6.61292 30.8307 5.5859 30.024 5.92132 29.1137L9.41714 19.6263C9.56546 19.2238 9.44052 18.7715 9.10661 18.5022L1.28653 12.1949C0.535333 11.589 0.993391 10.3757 1.95757 10.4174L11.9108 10.8482C12.3452 10.8671 12.742 10.603 12.8923 10.1949L16.3729 0.748919Z" />
+            </symbol>
+        </defs>
+    </svg>
+
+    <div class="wrapper">
+
+        <header class="header">
+            <div class="container">
+                <a class="logo" href="#">
+                    <img src="assets/images/icons/logo.svg" alt="logo">
+                </a>
+                <div class="header-content">
+                    <ul class="menu">
+                        <li class="menu-item"><a href="#">Home</a></li>
+                        <li class="menu-item"><a href="#">About Us</a></li>
+                        <li class="menu-item"><a href="#">Products</a></li>
+                        <li class="menu-item"><a href="#">Testimonials</a></li>
+                    </ul>
+                    <div class="user-actions text-gray">
+                        <a class="user-actions__login" href="#">LogIn</a>
+                        <span>/</span>
+                        <a class="user-actions__registration" href="#">SignUp</a>
+                    </div>
+                    <a class="user-actions__icon" href="#">
+                        <img src="assets/images/icons/user.svg" alt="user">
+                    </a>
+                    <a class="cart" href="#">
+                        <img class="cart__icon" src="assets/images/icons/basket.svg" alt="basket">
+                        <span class="cart__amount">4</span>
+                    </a>
+                    <div class="burger-menu">
+                        <span></span>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <main class="main">
+
+            <section class="section banner">
+                <div class="banner-image">
+                    <img src="assets/images/products/plant_big.png" alt="plant">
+                    <div class="delivery">
+                        <img class="delivery-icon" src="assets/images/icons/car.svg" alt="car">
+                        <div class="delivery-content">
+                            <div class="delivery-content__title">12 Hr Fast Delivery</div>
+                            <div class="delivery-content__rating"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="banner-content">
+                        <h1 class="banner-content__title">Proper greening & smart solutions. be nice to them</h1>
+                        <p class="banner-content__text">It is a long established fact that a reader will be distracted by the readable.</p>
+                        <button class="button">
+                            <span class="button-text">Join Now</span>
+                        </button>
+                    </div>
+                    <div class="banner-slider__wrapper">
+                        <div class="banner-slider swiper">
+                            <div class="swiper-wrapper">
+                                <div class="banner-slider__card swiper-slide">
+                                    <div class="banner-slider__card-image">
+                                        <img src="assets/images/products/plant_03.png" alt="plant">
+                                        <div class="banner-slider__card-price">$54</div>
+                                    </div>
+                                    <a class="banner-slider__card-title" href="#">Chinese Swamp Cypress</a>
+                                </div>
+                                <div class="banner-slider__card swiper-slide">
+                                    <div class="banner-slider__card-image">
+                                        <img src="assets/images/products/plant_02.png" alt="plant">
+                                        <div class="banner-slider__card-price">$60</div>
+                                    </div>
+                                    <a class="banner-slider__card-title" href="#">Black Mangrove Tree</a>
+                                </div>
+                                <div class="banner-slider__card swiper-slide">
+                                    <div class="banner-slider__card-image">
+                                        <img src="assets/images/products/plant_01.png" alt="plant">
+                                        <div class="banner-slider__card-price">$37</div>
+                                    </div>
+                                    <a class="banner-slider__card-title" href="#">Cabbage Trees</a>
+                                </div>
+                                <div class="banner-slider__card swiper-slide">
+                                    <div class="banner-slider__card-image">
+                                        <img src="assets/images/products/plant_03.png" alt="plant">
+                                        <div class="banner-slider__card-price">$54</div>
+                                    </div>
+                                    <a class="banner-slider__card-title" href="#">Chinese Swamp Cypress</a>
+                                </div>
+                                <div class="banner-slider__card swiper-slide">
+                                    <div class="banner-slider__card-image">
+                                        <img src="assets/images/products/plant_02.png" alt="plant">
+                                        <div class="banner-slider__card-price">$60</div>
+                                    </div>
+                                    <a class="banner-slider__card-title" href="#">Black Mangrove Tree</a>
+                                </div>
+                                <div class="banner-slider__card swiper-slide">
+                                    <div class="banner-slider__card-image">
+                                        <img src="assets/images/products/plant_01.png" alt="plant">
+                                        <div class="banner-slider__card-price">$37</div>
+                                    </div>
+                                    <a class="banner-slider__card-title" href="#">Cabbage Trees</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="banner-slider__buttons">
+                            <div class="banner-slider-button banner-slider-button--prev"></div>
+                            <div class="banner-slider-button banner-slider-button--next"></div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="section benefits green-background">
+                <div class="container">
+                    <h2 class="section-title">Our Benefits</h2>
+                    <div class="benefits-list">
+                        <div class="benefits-list__item">
+                            <img src="assets/images/icons/benefit_01.svg" alt="benefit_01">
+                            <div class="benefits-list__item-title">Best Services</div>
+                            <p class="text-gray">It is a long established fact that a reader will be distracted by the readable.</p>
+                        </div>
+                        <div class="benefits-list__item">
+                            <img src="assets/images/icons/benefit_02.svg" alt="benefit_02">
+                            <div class="benefits-list__item-title">Free Shipping</div>
+                            <p class="text-gray">It is a long established fact that a reader will be distracted by the readable.</p>
+                        </div>
+                        <div class="benefits-list__item">
+                            <img src="assets/images/icons/benefit_03.svg" alt="benefit_03">
+                            <div class="benefits-list__item-title">Best Services</div>
+                            <p class="text-gray">It is a long established fact that a reader will be distracted by the readable.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="section about">
+                <div class="container">
+                    <div class="about-image">
+                        <img src="assets/images/products/plant_04.png" alt="plant">
+                        <div class="about-image__decoration"></div>
+                    </div>
+                    <div class="about-content">
+                        <h2 class="section-title">About Our tree plantation</h2>
+                        <p class="text-gray">Some patients may wonder how to make a doctor’s appointment by text. To make it easy, doctors’ offices can simply update their website and telephone on hold message to let patients know they can schedule an appointment using SMS. After an appointment has been made,</p>
+                        <a href="#" class="button">Read More</a>
+                    </div>
+                </div>
+            </section>
+
+            <section class="section popular green-background">
+                <div class="container">
+                    <h2 class="section-title">Best Selling Trees</h2>
+                    <p class="section-text">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores</p>
+                    <div class="popular-slider__wrapper">
+                        <div class="swiper popular-slider">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide popular-slider__card">
+                                    <div class="popular-slider__card-image">
+                                        <img src="assets/images/products/tree_03.png" alt="tree">
+                                    </div>
+                                    <div class="popular-slider__card-content">
+                                        <div class="rating">
+                                            <div class="rating-fill" style="width: 90%"></div>
+                                        </div>
+                                        <a class="popular-slider__card-title" href="#">Delightful Dieffenbachia</a>
+                                        <p class="popular-slider__card-text text-gray">It is a long established fact that a reader will be distracted.</p>
+                                        <div class="popular-slider__card-bottom">
+                                            <div class="popular-slider__card-price">$54.70</div>
+                                            <a class="popular-slider__card-buy" href="#">
+                                                <span>Buy Now</span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide popular-slider__card">
+                                    <div class="popular-slider__card-image">
+                                        <img src="assets/images/products/tree_02.png" alt="tree">
+                                    </div>
+                                    <div class="popular-slider__card-content">
+                                        <div class="rating">
+                                            <div class="rating-fill" style="width: 50%"></div>
+                                        </div>
+                                        <a class="popular-slider__card-title" href="#">Delightful Dieffenbachia</a>
+                                        <p class="popular-slider__card-text text-gray">It is a long established fact that a reader will be distracted.</p>
+                                        <div class="popular-slider__card-bottom">
+                                            <div class="popular-slider__card-price">$54.70</div>
+                                            <a class="popular-slider__card-buy" href="#">
+                                                <span>Buy Now</span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide popular-slider__card">
+                                    <div class="popular-slider__card-image">
+                                        <img src="assets/images/products/tree_01.png" alt="tree">
+                                    </div>
+                                    <div class="popular-slider__card-content">
+                                        <div class="rating">
+                                            <div class="rating-fill" style="width: 100%"></div>
+                                        </div>
+                                        <a class="popular-slider__card-title" href="#">Delightful Dieffenbachia</a>
+                                        <p class="popular-slider__card-text text-gray">It is a long established fact that a reader will be distracted.</p>
+                                        <div class="popular-slider__card-bottom">
+                                            <div class="popular-slider__card-price">$54.70</div>
+                                            <a class="popular-slider__card-buy" href="#">
+                                                <span>Buy Now</span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide popular-slider__card">
+                                    <div class="popular-slider__card-image">
+                                        <img src="assets/images/products/tree_03.png" alt="tree">
+                                    </div>
+                                    <div class="popular-slider__card-content">
+                                        <div class="rating">
+                                            <div class="rating-fill" style="width: 80%"></div>
+                                        </div>
+                                        <a class="popular-slider__card-title" href="#">Delightful Dieffenbachia</a>
+                                        <p class="popular-slider__card-text text-gray">It is a long established fact that a reader will be distracted.</p>
+                                        <div class="popular-slider__card-bottom">
+                                            <div class="popular-slider__card-price">$54.70</div>
+                                            <a class="popular-slider__card-buy" href="#">
+                                                <span>Buy Now</span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide popular-slider__card">
+                                    <div class="popular-slider__card-image">
+                                        <img src="assets/images/products/tree_02.png" alt="tree">
+                                    </div>
+                                    <div class="popular-slider__card-content">
+                                        <div class="rating">
+                                            <div class="rating-fill" style="width: 77%"></div>
+                                        </div>
+                                        <a class="popular-slider__card-title" href="#">Delightful Dieffenbachia</a>
+                                        <p class="popular-slider__card-text text-gray">It is a long established fact that a reader will be distracted.</p>
+                                        <div class="popular-slider__card-bottom">
+                                            <div class="popular-slider__card-price">$54.70</div>
+                                            <a class="popular-slider__card-buy" href="#">
+                                                <span>Buy Now</span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide popular-slider__card">
+                                    <div class="popular-slider__card-image">
+                                        <img src="assets/images/products/tree_01.png" alt="tree">
+                                    </div>
+                                    <div class="popular-slider__card-content">
+                                        <div class="rating">
+                                            <div class="rating-fill" style="width: 70%"></div>
+                                        </div>
+                                        <a class="popular-slider__card-title" href="#">Delightful Dieffenbachia</a>
+                                        <p class="popular-slider__card-text text-gray">It is a long established fact that a reader will be distracted.</p>
+                                        <div class="popular-slider__card-bottom">
+                                            <div class="popular-slider__card-price">$54.70</div>
+                                            <a class="popular-slider__card-buy" href="#">
+                                                <span>Buy Now</span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="popular-slider__buttons">
+                            <div class="popular-slider-button popular-slider-button--prev"></div>
+                            <div class="popular-slider-button popular-slider-button--next"></div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="section services">
+                <div class="container">
+                    <h2 class="section-title">Our Service</h2>
+                    <p class="section-text">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores</p>
+                    <div class="services-content">
+                        <div class="services-content__list">
+                            <div class="service">
+                                <div class="service-title">Tree Planting</div>
+                                <p class="text-gray">Lorem ipsum dolor sit amet, consectet micongue kladipiscing hlelit. Donec ut diam pulvinar.</p>
+                            </div>
+                            <div class="service">
+                                <div class="service-title">Land Scaping Design</div>
+                                <p class="text-gray">It is a long established fact that a reader will be distracted by the readable.</p>
+                            </div>
+                            <div class="service">
+                                <div class="service-title">Rush Removal</div>
+                                <p class="text-gray">It is a long established fact that a reader will be distracted by the readable.</p>
+                            </div>
+                        </div>
+                        <div class="services-content__image">
+                            <img src="assets/images/products/plant_05.png" alt="plant">
+                        </div>
+                        <div class="services-content__list">
+                            <div class="service">
+                                <div class="service-title">Garden Watering</div>
+                                <p class="text-gray">It is a long established fact that a reader will be distracted by the readable.</p>
+                            </div>
+                            <div class="service">
+                                <div class="service-title">Planting Flower</div>
+                                <p class="text-gray">Lorem ipsum dolor sit amet, consectet micongue kladipiscing hlelit. Donec ut diam pulvinar.</p>
+                            </div>
+                            <div class="service">
+                                <div class="service-title">Garden Watering</div>
+                                <p class="text-gray">It is a long established fact that a reader will be distracted by the readable.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="section testimonials green-background">
+                <div class="container">
+                    <h2 class="section-title">What customers say</h2>
+                    <p class="section-text">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores</p>
+                    <div class="testimonials-slider">
+                        <div class="testimonials-slider-wrap">
+                            <div class="testimonials-slider-line">
+                                <div class="testimonial-slide active">
+                                    <img class="testimonial-author-photo" src="assets/images/other/avatar_01.png" alt="avatar">
+                                    <div class="testimonial-author">Maria Samper - MADRID</div>
+                                    <div class="testimonial-rating" aria-label="Rating is 4.5 out of 5">
+                                        <svg class="testimonial-rating-icon active" width="33" height="32" viewBox="0 0 33 32">
+                                            <use xlink:href="#star"></use>
+                                        </svg>
+                                        <svg class="testimonial-rating-icon active" width="33" height="32" viewBox="0 0 33 32">
+                                            <use xlink:href="#star"></use>
+                                        </svg>
+                                        <svg class="testimonial-rating-icon active" width="33" height="32" viewBox="0 0 33 32">
+                                            <use xlink:href="#star"></use>
+                                        </svg>
+                                        <svg class="testimonial-rating-icon active" width="33" height="32" viewBox="0 0 33 32">
+                                            <use xlink:href="#star"></use>
+                                        </svg>
+                                        <svg class="testimonial-rating-icon" width="33" height="32" viewBox="0 0 33 32">
+                                            <use xlink:href="#star" fill="url(#half)"></use>
+                                        </svg>
+                                    </div>
+                                    <p class="testimonial-text">“We had Customer Service! I'm just starting out withthe team helped me so much with integrating thisinto my website. so much with integrating thisinto my website.</p>
+                                </div>
+                                <div class="testimonial-slide">
+                                    <img class="testimonial-author-photo" src="assets/images/other/avatar_02.png" alt="avatar">
+                                    <div class="testimonial-author">Maria Samper - MADRID</div>
+                                    <div class="testimonial-rating" aria-label="Rating is 3.5 out of 5">
+                                        <svg class="testimonial-rating-icon active" width="33" height="32" viewBox="0 0 33 32">
+                                            <use xlink:href="#star"></use>
+                                        </svg>
+                                        <svg class="testimonial-rating-icon active" width="33" height="32" viewBox="0 0 33 32">
+                                            <use xlink:href="#star"></use>
+                                        </svg>
+                                        <svg class="testimonial-rating-icon active" width="33" height="32" viewBox="0 0 33 32">
+                                            <use xlink:href="#star" fill="url(#half)"></use>
+                                        </svg>
+                                        <svg class="testimonial-rating-icon" width="33" height="32" viewBox="0 0 33 32">
+                                            <use xlink:href="#star"></use>
+                                        </svg>
+                                        <svg class="testimonial-rating-icon" width="33" height="32" viewBox="0 0 33 32">
+                                            <use xlink:href="#star"></use>
+                                        </svg>
+                                    </div>
+                                    <p class="testimonial-text">“We had Customer Service! I'm just starting out withthe team helped me so much with integrating thisinto my website. so much with integrating thisinto my website.</p>
+                                </div>
+                                 <div class="testimonial-slide">
+                                    <img class="testimonial-author-photo" src="assets/images/other/avatar_01.png" alt="avatar">
+                                    <div class="testimonial-author">Maria Samper - MADRID</div>
+                                    <div class="testimonial-rating" aria-label="Rating is 4 out of 5">
+                                        <svg class="testimonial-rating-icon active" width="33" height="32" viewBox="0 0 33 32">
+                                            <use xlink:href="#star"></use>
+                                        </svg>
+                                        <svg class="testimonial-rating-icon active" width="33" height="32" viewBox="0 0 33 32">
+                                            <use xlink:href="#star"></use>
+                                        </svg>
+                                        <svg class="testimonial-rating-icon active" width="33" height="32" viewBox="0 0 33 32">
+                                            <use xlink:href="#star"></use>
+                                        </svg>
+                                        <svg class="testimonial-rating-icon active" width="33" height="32" viewBox="0 0 33 32">
+                                            <use xlink:href="#star"></use>
+                                        </svg>
+                                        <svg class="testimonial-rating-icon" width="33" height="32" viewBox="0 0 33 32">
+                                            <use xlink:href="#star"></use>
+                                        </svg>
+                                    </div>
+                                    <p class="testimonial-text">“We had Customer Service! I'm just starting out withthe team helped me so much with integrating thisinto my website. so much with integrating thisinto my website.</p>
+                                </div>
+                                 <div class="testimonial-slide">
+                                    <img class="testimonial-author-photo" src="assets/images/other/avatar_02.png" alt="avatar">
+                                    <div class="testimonial-author">Maria Samper - MADRID</div>
+                                    <div class="testimonial-rating" aria-label="Rating is 5 out of 5">
+                                        <svg class="testimonial-rating-icon active" width="33" height="32" viewBox="0 0 33 32">
+                                            <use xlink:href="#star"></use>
+                                        </svg>
+                                        <svg class="testimonial-rating-icon active" width="33" height="32" viewBox="0 0 33 32">
+                                            <use xlink:href="#star"></use>
+                                        </svg>
+                                        <svg class="testimonial-rating-icon active" width="33" height="32" viewBox="0 0 33 32">
+                                            <use xlink:href="#star"></use>
+                                        </svg>
+                                        <svg class="testimonial-rating-icon active" width="33" height="32" viewBox="0 0 33 32">
+                                            <use xlink:href="#star"></use>
+                                        </svg>
+                                        <svg class="testimonial-rating-icon active" width="33" height="32" viewBox="0 0 33 32">
+                                            <use xlink:href="#star"></use>
+                                        </svg>
+                                    </div>
+                                    <p class="testimonial-text">“We had Customer Service! I'm just starting out withthe team helped me so much with integrating thisinto my website. so much with integrating thisinto my website.</p>
+                                </div>
+                                 <div class="testimonial-slide">
+                                    <img class="testimonial-author-photo" src="assets/images/other/avatar_02.png" alt="avatar">
+                                    <div class="testimonial-author">Maria Samper - MADRID</div>
+                                    <div class="testimonial-rating" aria-label="Rating is 4 out of 5">
+                                        <svg class="testimonial-rating-icon active" width="33" height="32" viewBox="0 0 33 32">
+                                            <use xlink:href="#star"></use>
+                                        </svg>
+                                        <svg class="testimonial-rating-icon active" width="33" height="32" viewBox="0 0 33 32">
+                                            <use xlink:href="#star"></use>
+                                        </svg>
+                                        <svg class="testimonial-rating-icon active" width="33" height="32" viewBox="0 0 33 32">
+                                            <use xlink:href="#star"></use>
+                                        </svg>
+                                        <svg class="testimonial-rating-icon active" width="33" height="32" viewBox="0 0 33 32">
+                                            <use xlink:href="#star"></use>
+                                        </svg>
+                                        <svg class="testimonial-rating-icon" width="33" height="32" viewBox="0 0 33 32">
+                                            <use xlink:href="#star"></use>
+                                        </svg>
+                                    </div>
+                                    <p class="testimonial-text">“We had Customer Service! I'm just starting out withthe team helped me so much with integrating thisinto my website. so much with integrating thisinto my website.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="testimonials-slider__buttons">
+                            <div class="testimonials-slider-button testimonials-slider-button--prev disabled"></div>
+                            <div class="testimonials-slider-button testimonials-slider-button--next"></div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="section subscribe">
+                <div class="container">
+                    <h2 class="section-title">Subscribe to our news!</h2>
+                    <form action="post" class="subscribe-form">
+                        <input type="email" name="email" id="email" placeholder="Enter your mail. . .">
+                        <button class="button" type="submit">
+                            Subscribe!
+                            <img class="button-icon" src="assets/images/icons/mail.svg" alt="mail">
+                        </button>
+                    </form>
+                </div>
+            </section>
+
+        </main>
+
+        <footer class="footer">
+            <div class="container">
+                <div class="footer-company-info">
+                    <a class="logo" href="#">
+                        <img src="assets/images/icons/logo.svg" alt="logo">
+                    </a>
+                    <p class="text-gray">Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature.</p>
+                    <div class="socials">
+                        <a class="socials__icon" href="#">
+                            <img src="assets/images/icons/pinterest.svg" alt="pinterest">
+                        </a>
+                        <a class="socials__icon" href="#">
+                            <img src="assets/images/icons/insta.svg" alt="instagram">
+                        </a>
+                        <a class="socials__icon" href="#">
+                            <img src="assets/images/icons/fb.svg" alt="facebook">
+                        </a>
+                        <a class="socials__icon" href="#">
+                            <img src="assets/images/icons/youtube.svg" alt="youtube">
+                        </a>
+                    </div>
+                </div>
+                <nav class="footer-navigation">
+                    <div class="footer-navigation__block">
+                        <div class="footer-navigation__block-title">
+                            Useful Links
+                            <div class="footer-navigation__block-title-arrow"></div>
+                        </div>
+                        <ul class="footer-navigation__block-list">
+                            <li class="footer-navigation__block-item"><a href="#">About Pronia</a></li>
+                            <li class="footer-navigation__block-item"><a href="#">How to shop</a></li>
+                            <li class="footer-navigation__block-item"><a href="#">FAQ</a></li>
+                            <li class="footer-navigation__block-item"><a href="#">Contact us</a></li>
+                            <li class="footer-navigation__block-item"><a href="#">Log in</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-navigation__block">
+                        <div class="footer-navigation__block-title">
+                            My Account
+                            <div class="footer-navigation__block-title-arrow"></div>
+                        </div>
+                        <ul class="footer-navigation__block-list">
+                            <li class="footer-navigation__block-item"><a href="#">Sign In</a></li>
+                            <li class="footer-navigation__block-item"><a href="#">View Cart</a></li>
+                            <li class="footer-navigation__block-item"><a href="#">My Wishlist</a></li>
+                            <li class="footer-navigation__block-item"><a href="#">Track My Order</a></li>
+                            <li class="footer-navigation__block-item"><a href="#">Help</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-navigation__block">
+                        <div class="footer-navigation__block-title">
+                            Our Service
+                            <div class="footer-navigation__block-title-arrow"></div>
+                        </div>
+                        <ul class="footer-navigation__block-list">
+                            <li class="footer-navigation__block-item"><a href="#">Payment Methods</a></li>
+                            <li class="footer-navigation__block-item"><a href="#">Money Guarantee!</a></li>
+                            <li class="footer-navigation__block-item"><a href="#">Returns</a></li>
+                            <li class="footer-navigation__block-item"><a href="#">Shipping</a></li>
+                            <li class="footer-navigation__block-item"><a href="#">Privacy Policy</a></li>
+                        </ul>
+                    </div>
+                </nav>
+                <div class="footer-contacts">
+                    <div class="footer-contacts__title">Got Question? Call Us</div>
+                    <a class="footer-contacts__phone" href="tel:+123 456 789">123 456 789</a>
+                    <div class="footer-contacts__address">Your Address Goes Here</div>
+                    <img class="footer-contacts__payment-cards" src="assets/images/other/cards.png" alt="cards">
+                </div>
+            </div>
+        </footer>
+        
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script src="assets/scripts/script.js"></script>
+</body>
+</html>

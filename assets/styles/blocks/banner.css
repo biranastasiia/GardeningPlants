@@ -1,0 +1,206 @@
+.banner {
+    padding-top: 192px;
+    padding-bottom: 130px;
+    background: url('../../images/icons/waves.svg') right top / auto no-repeat;
+    position: relative;
+}
+.banner::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 1445px;
+    height: 800px;
+    background: linear-gradient(90deg, rgba(201, 253, 214, 0) 0%, #C9FDD6 100%);
+    border-radius: 0px 0px 0px 450px;
+    z-index: -2;
+}
+.banner-image {
+    position: absolute;
+    top: 130px;
+    left: 64px;
+    z-index: -1;
+}
+.banner-image>img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+.delivery {
+    position: absolute;
+    top: 50%;
+    left: 20%;
+    width: fit-content;
+    padding: 24px 28px 23px;
+    background: linear-gradient(90deg, rgba(126, 247, 156, 0.35) 2.38%, rgba(255, 255, 255, 0.2275) 100%);
+    backdrop-filter: blur(10px);
+    border-radius: 8px;
+    display: flex;
+    gap: 20px;
+}
+.delivery-content__title {
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 25px;
+    margin-bottom: 9px;
+}
+.delivery-content__rating {
+    width: 104px;
+    height: 17px;
+    background: url("../../images/icons/stars.svg") center / auto no-repeat;
+}
+.banner-content {
+    max-width: 582px;
+    margin-left: auto;
+    margin-bottom: 167px;
+}
+.banner-content__title {
+    font-family: 'Lora';
+    font-weight: 700;
+    font-size: 60px;
+    line-height: 72px;
+    margin-bottom: 32px;
+}
+.banner-content__text {
+    font-size: 24px;
+    line-height: 36px;
+    letter-spacing: 0.01em;
+    color: #666666;
+    margin-bottom: 72px;
+}
+.banner .button-text {
+    display: block;
+    padding-right: 50px;
+    background: url("../../images/icons/chevron_right.svg") right center / auto no-repeat;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 36px;
+    letter-spacing: 0.06em;
+    text-transform: capitalize;
+}
+.banner-slider__wrapper {
+    max-width: 778px;
+    margin-left: auto;
+    position: relative;
+}
+.banner-slider-button {
+    position: absolute;
+    right: -88px;
+    width: 40px;
+    height: 40px;
+    border: 1px solid #05A42C;
+    background: url("../../images/icons/arrow_right_green.svg") center / auto no-repeat, #FFFFFF;
+    border-radius: 50%;
+    transition: .3s all ease;
+    cursor: pointer;
+}
+.banner-slider-button:hover {
+    background: url("../../images/icons/arrow_right_white.svg") center / auto no-repeat, #05A42C;
+    box-shadow: 0px 10px 20px rgba(4, 84, 23, 0.2);
+}
+.banner-slider-button--prev {
+    bottom: 40px;
+    transform: scale(-1, 1);
+}
+.banner-slider-button--next {
+    bottom: 100px;
+}
+.banner-slider__card {
+    padding: 0 9px 22px;
+    background: linear-gradient(0deg, #91C89E 0%, rgba(219, 249, 226, 0) 55%);
+    border-radius: 10px;
+    text-align: center;
+}
+.banner-slider__card-image {
+    position: relative;
+    height: 260px;
+}
+.banner-slider__card-price {
+    position: absolute;
+    bottom: 17px;
+    right: 47px;
+    width: fit-content;
+    padding: 2px 16px;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 50px;
+    font-weight: 600;
+    color: #05A42C;
+}
+.banner-slider__card-title {
+    font-family: 'Lora';
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    text-transform: capitalize;
+    color: #333333;
+    margin-top: 13px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+@media screen and (max-width: 1900px) {
+    .banner-content {
+        margin-bottom: 300px;
+    }
+    .banner-slider__wrapper {
+        max-width: 85%;
+        margin-left: unset;
+    }
+    .banner-image {
+        height: 700px;
+    }
+    .delivery {
+        top: 30%;
+    }
+}
+@media screen and (max-width: 1279.68px) {
+    .banner-image {
+        display: none;
+    }
+    .banner-content {
+        max-width: 100%;
+        margin-bottom: 130px;
+    }
+}
+@media screen and (max-width: 1023.98px) {
+    .banner-slider-button {
+        right: -60px;
+    }
+}
+@media screen and (max-width: 767.98px) {
+    .banner {
+        padding-top: 150px;
+        padding-bottom: 100px;
+    }
+}
+@media screen and (max-width: 639.98px) {
+    .banner-content__title {
+        font-size: 52px;
+        line-height: 60px;
+    }
+}
+@media screen and (max-width: 479.98px) {
+    .banner-content__title {
+        font-size: 40px;
+        line-height: 50px;
+    }
+    .banner-content__text {
+        font-size: 22px;
+        line-height: 30px;
+        letter-spacing: 0.01em;
+    }
+    .banner-slider__wrapper {
+        max-width: 100%;
+    }
+    .banner-slider__buttons {
+        margin-top: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+    }
+    .banner-slider-button {
+        position: static;
+    }
+}

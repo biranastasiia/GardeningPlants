@@ -1,0 +1,213 @@
+.popular-slider__wrapper {
+    position: relative;
+}
+.popular-slider-button {
+    position: absolute;
+    bottom: 19%;
+    width: 40px;
+    height: 40px;
+    border: 1px solid #05A42C;
+    background: url("../../images/icons/arrow_right_green.svg") center / auto no-repeat, #FFFFFF;
+    border-radius: 50%;
+    transition: .3s all ease;
+    cursor: pointer;
+}
+.popular-slider-button:hover {
+    background: url("../../images/icons/arrow_right_white.svg") center / auto no-repeat, #05A42C;
+    box-shadow: 0px 10px 20px rgba(4, 84, 23, 0.2);
+}
+.popular-slider-button--prev {
+    transform: scale(-1, 1);
+    left: -68px;
+}
+.popular-slider-button--next {
+    right: -68px;
+}
+
+
+/* CARD STYLES */
+
+.popular-slider__card-image {
+    height: 420px;
+    text-align: center;
+    margin-bottom: -44px;
+    position: relative;
+    z-index: 1;
+    transition: .3s all ease;
+}
+.popular-slider__card-image::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 59px;
+    height: 13px;
+    background: #E0E0E0;
+    filter: blur(4px);
+    border-radius: 50%;
+    z-index: -1;
+    transition: .3s all ease;
+}
+.popular-slider__card-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+.popular-slider__card .rating {
+    width: 73px;
+    height: 12px;
+    background-image: url('../../images/icons/stars_gray.svg');
+    background-repeat: no-repeat;
+    margin-left: auto;
+    margin-bottom: 54px;
+    position: relative;
+}
+.popular-slider__card .rating-fill {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 12px;
+    background-image: url('../../images/icons/stars_green.svg');
+    background-repeat: no-repeat;
+    transition: .3s all ease;
+}
+.popular-slider__card-content {
+    padding: 24px 34px 34px;
+    background-color: #FFFFFF;
+    border-radius: 10px;
+    transition: .3s all ease;
+}
+.popular-slider__card-title {
+    display: block;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 32px;
+    text-align: center;
+    text-transform: capitalize;
+    color: #333333;
+    margin-bottom: 10px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    transition: .3s all ease;
+}
+.popular-slider__card-text {
+    text-align: center;
+    margin-bottom: 29px;
+    transition: .3s all ease;
+}
+.popular-slider__card-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+}
+.popular-slider__card-price {
+    font-weight: 500;
+    font-size: 26px;
+    line-height: 22px;
+    color: #05A42C;
+    transition: .3s all ease;
+}
+.popular-slider__card-buy {
+    padding: 8px 0;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+    letter-spacing: 0.01em;
+    text-transform: capitalize;
+    color: #313131;
+    white-space: nowrap;
+    transition: .3s all ease;
+}
+.popular-slider__card-buy span {
+    padding-right: 20px;
+    background: url('../../images/icons/arrow_right_dark.svg') right center / auto no-repeat;
+    transition: .3s all ease;
+}
+
+
+/* HOVER CARD EFFECTS */
+
+.popular-slider__card:hover .popular-slider__card-image {
+    transform: scale(1.05);
+}
+.popular-slider__card:hover .popular-slider__card-image::after {
+    bottom: -4%;
+    width: 84px;
+    height: 13px;
+    background: #008621;
+}
+.popular-slider__card:hover .rating-fill {
+    background-image: url('../../images/icons/stars_white.svg');
+}
+.popular-slider__card:hover .popular-slider__card-content {
+    background-color: #05A42C;
+    color: #FFFFFF;
+}
+.popular-slider__card:hover .popular-slider__card-title {
+    color: #FFFFFF;
+}
+.popular-slider__card:hover .popular-slider__card-text {
+    color: #C9FDD6;
+}
+.popular-slider__card:hover .popular-slider__card-price {
+    color: #FFFFFF;
+}
+.popular-slider__card:hover .popular-slider__card-buy {
+    padding: 8px 25px;
+    border-radius: 5px;
+    color: #FFFFFF;
+    background-color: #046D1E;
+}
+.popular-slider__card:hover .popular-slider__card-buy span {
+    padding-right: 20px;
+    background: url('../../images/icons/arrow_right_white.svg') right center / auto no-repeat;
+}
+
+
+@media screen and (max-width: 1239.98px) {
+    .popular-slider__wrapper {
+        width: 85%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+@media screen and (max-width: 1023.98px) {
+    .popular-slider__card-bottom {
+        flex-direction: column;
+        gap: 15px;
+    }
+    .popular-slider__card .rating {
+        margin-right: auto;
+        margin-top: 50px;
+        margin-bottom: 15px;
+    }
+}
+@media screen and (max-width: 767.98px) {
+    .popular-slider__wrapper {
+        width: 80%;
+    }
+    .popular-slider-button--next {
+        right: -50px;
+    }
+    .popular-slider-button--prev {
+        left: -50px;
+    }
+}
+@media screen and (max-width: 479.98px) {
+    .popular-slider__wrapper {
+        width: 100%;
+    }
+    .popular-slider__buttons {
+        margin-top: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+    }
+    .popular-slider-button {
+        position: static;
+    }
+}

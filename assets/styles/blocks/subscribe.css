@@ -1,0 +1,49 @@
+.subscribe {
+    padding-top: 130px;
+    padding-bottom: 130px;
+}
+.subscribe .section-title {
+    margin-bottom: 60px;
+}
+.subscribe-form {
+    max-width: 647px;
+    margin-right: auto;
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+    gap: 24px;
+}
+.subscribe-form input {
+    max-width: 455px;
+    width: 100%;
+}
+.subscribe-form .button {
+    padding: 22px 44px;
+    font-size: 18px;
+    line-height: 27px;
+}
+.subscribe-form .button-icon {
+    display: none;
+}
+
+@media screen and (max-width: 767.98px) {
+    .subscribe {
+        padding-top: 80px;
+        padding-bottom: 80px;
+    }
+}
+@media screen and (max-width: 539.98px) {
+    .subscribe-form {
+        align-items: stretch;
+        gap: 0;
+    }
+    .subscribe-form .button {
+        padding: 15px 18px;
+        font-size: 0;
+    }
+    .subscribe-form .button-icon {
+        display: block;
+        width: 36px;
+        height: 36px;
+    }
+}
