@@ -12,6 +12,18 @@ window.addEventListener('scroll', function () {
     }
 });
 
+
+// SCROLL TO ELEMENT
+
+const menuLinks = document.querySelectorAll('.menu-link');
+menuLinks.forEach(link => link.addEventListener('click', function (e) {
+    e.preventDefault();
+    const elementId = link.dataset.link;
+    const element = document.getElementById(elementId);
+    element.scrollIntoView({ behavior: "smooth" });
+}))
+
+
 // BURGER MENU
 
 const burgerMenu = document.querySelector('.burger-menu');
